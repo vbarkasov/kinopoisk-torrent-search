@@ -1,0 +1,33 @@
+.kts-torrent-link {
+    display: inline-block;
+    width: 13px;
+    height: 20px;
+    padding: 0 3px;
+    vertical-align: middle;
+    border: 1px solid #74ABEE;
+    background: #74ABEE;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    line-height: 22px;
+    margin-left: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.search_results .element .kts-torrent-link {
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+    padding: 0 3px;
+}
+
+.kts-torrent-link:hover {
+    border: 1px solid #74ABEE;
+    background: white;
+    color: #74ABEE;
+}
+
+.search_results .element .kts-torrent-link:hover {
+    color: #74ABEE;
+}

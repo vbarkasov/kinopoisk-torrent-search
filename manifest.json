@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+  "name": "Kinopoisk Torrent Search",
+  "version": "0.1",
+  "short_name": "kinopoisktorrent",
+  "description": "",
+  "author": "Vladimir Barkasov (vbarkasov4dev@gmail.com)",
+  "icons": {
+    "32": "img/32.png",
+    "128": "img/128.png"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "js": [
+        "js/jquery.js",
+        "js/content.js"
+      ],
+      "css": [
+        "css/style.css"
+      ],
+      "matches": [
+        "https://www.kinopoisk.ru/*"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "web_accessible_resources": [
+    "img/*.png",
+    "img/*.jpg"
+  ]
+}
